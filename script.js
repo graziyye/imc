@@ -1,14 +1,21 @@
-const  calcular = document.getElementById('calcular');
+const calcular = document.getElementById('calcular');
 
 function imc(){
     const nome = document.getElementById('nome').value;
     const altura = document.getElementById('altura').value;
     const peso = document.getElementById('peso').value;
-    const resultado = document.getElementById('resultado');
+    const resultado = document.getElementById
+    ('resultado');
 
-    const valorIMC = (peso/(altura*altura)).toFixed;
+    const valorIMC = (peso/(altura*altura)).toFixed(1);
 
-    resultado.textContent = `${} seu IMC é ${valorIMC}`;
+    resultado.textContent = `${nome} seu IMC é ${valorIMC}!`;
 }
 
-calcular.addEventListener('click', imc)
+if(nome !="" && altura !=""){
+    const valorIMC = (peso/(altura*altura)).toFixed(1);
+    let classificacao="";
+    
+}
+
+calcular.addEventListener('click',imc);
