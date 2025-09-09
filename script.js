@@ -22,7 +22,7 @@ function imc(){
         classificacao="Obesidade";
     }
 
-    resultado.textContent = `${nome} , seu IMC é ${valorIMC}. Portanto sua classificação é ${classificacao}`;
+    resultado.textContent = `${nome} , seu IMC é ${valorIMC}. Portanto sua classificação é "${classificacao}"`;
 }
 
 
